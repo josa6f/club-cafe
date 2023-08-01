@@ -13,7 +13,7 @@ export function Navbar() {
 
       <div className="navbar__main-logo">
 
-        <img src={images_navbar[0]} alt="" />
+        <img src={images_navbar[0]} alt="" /> 
       
       </div>
       
