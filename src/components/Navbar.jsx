@@ -2,6 +2,7 @@ import mainLogo_image from '../assets/club_cafe.png'
 import user_image from '../assets/user.png'
 import cart_image from '../assets/cart.png'
 import './styles/navbar.scss'
+import { Login } from '../pages/Login'
 
 const images_navbar = [mainLogo_image, user_image, cart_image]
 
@@ -26,15 +27,21 @@ export function Navbar() {
       
       </div>
 
-      <div className = "user-cart">
+      <div className = "navbar__user-Login-cart">
 
-        <div className = "user-cart__user">
-          <img src={images_navbar[1]} alt="" />
+        <div className = "user-Login-cart">
+
+          <div className="user-Login-cart__Login">
+            <img src={images_navbar[1]} alt="" />
+            <Login />
+          </div>
+          
+          <div className="user-Login-cart__cart">
+            <img src={images_navbar[2]} alt="" />
+          </div>
+          
         </div>
-        <div className = "user-cart__cart">
-          <img src={images_navbar[2]} alt="" />
-        </div>
-      
+
       </div>
 
     </div>
